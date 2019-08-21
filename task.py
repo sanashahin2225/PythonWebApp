@@ -1,5 +1,5 @@
-from flask import render_template
 from flask import Flask, request
+from flask import render_template
 import json
 import requests
 import time
