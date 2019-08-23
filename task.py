@@ -20,7 +20,7 @@ def login():
 	)
 	
 	response = requests.post('http://18.207.161.126:8080/job/ParameterizedJob/buildWithParameters', params=params, auth=('sanashahin2225', '117a2003d333a244d05d504a90791089fc'))
-	time.sleep(15)
+	#time.sleep(15)
 	response1 = requests.get('http://18.207.161.126:8080/job/ParameterizedJob/lastBuild/api/json', auth=('sanashahin2225', '117a2003d333a244d05d504a90791089fc'))
 	data = json.loads(response1.text)
 	id=data['id']
